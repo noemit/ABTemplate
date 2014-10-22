@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="exhibitionApp">
+<head>
+	<meta charset="utf-8">
+	<title>ArtBinder Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+    <script src="js/controllers.js"></script>
+
+    </head>
+
+<body ng-controller="ArtBinderCtrl">
+	<div class="container-fluid" id="#main">
+		<div class="row clearfix">
+			<div class="col-md-4 column logoBlock"><img src="img/logo.jpg" alt="logo">
+			</div>
+			<div class="col-md-8 column hidden-sm hidden-xs socialAndSearch">
+				<div class="row clearfix topLeftPanel">
+					<div class="col-md-offset-5 col-md-3 column search">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control search" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn btn-search" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+								</span>
+							</div>
+
+						</form>
+					</div>
+					<div class="col-md-2 column socialMedia">
+						<div class="row clearfix">
+							<div class="col-xs-offset-3 col-xs-2"><i class="fa fa-lg fa-twitter"></i> </div>
+							<div class="col-xs-2"><i class="fa fa-lg fa-facebook"></i> </div>
+							<div class="col-xs-2"><i class="fa fa-lg fa-instagram marginfix"></i> </div>
+						</div>
+					</div>
+					<div class="col-md-2 column login">
+						Log In
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix topRowMenu hidden-sm hidden-xs">
+			<div class="col-md-2 column active">
+				<span>home</span>
+			</div>
+			<div class="col-md-2 column">
+				<span>galleries</span>
+			</div>
+			<div class="col-md-2 column">
+				<span>artists</span>
+			</div>
+			<div class="col-md-2 column">
+				<span>on view</span>
+			</div>
+			<div class="col-md-2 column">
+				<span>feed</span>
+			</div>
+			<div class="col-md-2 column">
+				<span>packet</span>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="carousel slide" id="carousel-410450">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#carousel-410450">
+						</li>
+						<li data-slide-to="1" data-target="#carousel-410450">
+						</li>
+						<li data-slide-to="2" data-target="#carousel-410450">
+						</li>
+						<li data-slide-to="3" data-target="#carousel-410450">
+						</li>
+						<li data-slide-to="4" data-target="#carousel-410450">
+						</li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img alt="" src="http://www.collegeforcreativestudies.edu/files/assets/images/original/1355433310_CenterGalleries.jpg">
+							<div class="carousel-caption">
+								<h4>
+									<u>Mary Weatherford</u> »
+								</h4>
+								<p>
+									David Kordansky
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="http://texasartistcircle.com/img/gallery_01.jpg">
+							<div class="carousel-caption">
+								<h4>
+									<u>Artist Name</u> »
+								</h4>
+								<p>
+									Gallerist Name
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="http://blogs.artinfo.com/artintheair/files/2013/07/gilbert-george-high-line.jpg">
+							<div class="carousel-caption">
+								<h4>
+									<u>Artist Name</u> »
+								</h4>
+								<p>
+									Gallerist Name
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="http://homageartproject.com/wp-content/themes/fullpane/themify/img.php?src=http://homageartproject.com/wp-content/uploads/2012/06/Louvre-Paris-France2-.jpg&w=1200&h=400&zc=1">
+							<div class="carousel-caption">
+								<h4>
+									<u>Artist Name</u> »
+								</h4>
+								<p>
+									Gallerist Name
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<img alt="" src="http://artdept.nd.edu/assets/107123/5000x/2013mfa_front.jpg">
+							<div class="carousel-caption">
+								<h4>
+									<u>Artist Name</u> »
+								</h4>
+								<p>
+									Gallerist Name
+								</p>
+							</div>
+						</div>
+
+					</div> <a class="left carousel-control" href="#carousel-410450" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="right carousel-control" href="#carousel-410450" data-slide="next"><i class="fa fa-angle-right"></i></span></a>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix gridSection" id="exsection">
+			<div class="col-md-12 column sectionTitle">This Week</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 column exhibitionwrap" ng-repeat="exhibition in exhibitions | limitTo: 10">
+				<span class="exhibitionImage hidden-md hidden-lg"><img src="{{exhibition.url}}" alt="{{exhibition.title}}"></span>
+				<div class="exhibitionHeader">
+					<span class="exhibitionTitle">{{exhibition.title}}</span>
+					<span class="exhibitionDate">{{exhibition.date}}</span>
+					<span class="exhibitionLocation">at <u>{{exhibition.location}}</u> »</span>
+				</div>
+				<span class="exhibitionImage hidden-sm hidden-xs"><img src="{{exhibition.url}}" alt="{{exhibition.title}}"></span>
+				<span class="exhibitionDescription hidden-sm hidden-xs" style="display:none;">{{exhibition.desc}}</span>
+				<span class="exhibitionView hidden-sm hidden-xs"><u>View Exhibition</u> »</span>
+			</div>
+		</div>
+		<div class="row clearfix gridSection">
+			<div class="col-md-12 column sectionTitle">Opening Soon</div>
+			<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+				<span class="openingSoonImage">
+					<span class="exhibitionImage hidden-md hidden-lg"><img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening"></span>
+					<img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+					<div class="openingSoonWrap">
+						<span class="exhibitionTitle">EXHIBITION TITLE EXAMPLE</span>
+						<span class="exhibitionLocation">at <u>Gallery Name</u> »</span>
+						<span class="exhibitionLocation"><small><i>Opening:</i> March 31st, 2014</small></span>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+					<span class="openingSoonImage">
+						<span class="exhibitionImage hidden-md hidden-lg"><img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening"></span>
+						<img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+						<div class="openingSoonWrap">
+							<span class="exhibitionTitle">EXHIBITION TITLE EXAMPLE</span>
+							<span class="exhibitionLocation">at <u>Gallery Name</u> »</span>
+							<span class="exhibitionLocation"><small><i>Opening:</i> March 31st, 2014</small></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+						<span class="openingSoonImage">
+							<span class="exhibitionImage hidden-md hidden-lg"><img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening"></span>
+							<img src="https://pbs.twimg.com/profile_images/2199716931/Long_view_72dpi_400x400.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+							<div class="openingSoonWrap">
+								<span class="exhibitionTitle">EXHIBITION TITLE EXAMPLE</span>
+								<span class="exhibitionLocation">at <u>Gallery Name</u> »</span>
+								<span class="exhibitionLocation"><small><i>Opening:</i> March 31st, 2014</small></span>
+							</div>
+						</div>
+
+					</div>
+					<div class="row clearfix gridSection">
+						<div class="col-md-12 column sectionTitle">New Artists</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+							<span class="openingSoonImage">
+								<span class="exhibitionImage hidden-md hidden-lg"><img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening"></span>
+								<img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+								<div class="artistwrap">
+									<span class="exhibitionTitle">PABLO PICASSO</span>
+									<span class="exhibitionLocation"><u>Gallery Name</u> »</span>
+								</div>
+							</div>
+
+
+							<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+								<span class="openingSoonImage">
+									<span class="exhibitionImage hidden-md hidden-lg"><img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening"></span>
+									<img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+									<div class="artistwrap">
+										<span class="exhibitionTitle">PABLO PICASSO</span>
+										<span class="exhibitionLocation"><u>Gallery Name</u> »</span>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 col-sm-6 col-xs-6 column openingSoonBlock">
+									<span class="openingSoonImage">
+										<span class="exhibitionImage hidden-md hidden-lg"><img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening"></span>
+										<img src="http://topyaps.com/wp-content/uploads/2013/10/Pablo-Picasso.jpg" alt="opening" class="hidden-sm hidden-xs"></span>
+										<div class="artistwrap">
+											<span class="exhibitionTitle">PABLO PICASSO</span>
+											<span class="exhibitionLocation"><u>Gallery Name</u> »</span>
+										</div>
+									</div>
+
+
+
+								</div>
+								<div class="row clearfix gridSection">
+								<div class="col-md-12 column sectionTitle"> </div>
+								<div class="col-md-4 column footerlogo"><img src="img/logo.jpg">
+									</div>
+									<div class="col-md-8 column">
+									<div class="row clearfix">
+							<div class="col-md-2 col-xs-4 bottomsocial"><i class="fa fa-lg fa-twitter"></i> Twitter</div>
+							<div class="col-md-2 col-xs-4 bottomsocial"><i class="fa fa-lg fa-facebook"></i> Facebook</div>
+							<div class="col-md-2 col-xs-4 bottomsocial"><i class="fa fa-lg fa-instagram marginfix"></i> Instagram</div>
+							<div class="col-md-6 col-xs-12"><form class="navbar-form navbar-left" role="search">
+							<div class="input-group subscribe-input">
+								<input type="text" class="form-control subscribe" placeholder="Update Sign Up">
+								<span class="input-group-btn">
+									<button class="btn btn-subscribe" type="submit">Subscribe</button>
+								</span>
+							</div>
+
+						</form></div>
+						</div>
+									</div>
+								</div>
+								<div class="row clearfix gridSection">
+								<div class="col-md-6 column copyright">PRESS  |  PRIVACY  |  © 2010 - 2014 ArtBinder. All rights reserved.<br></div>
+							</div>
+							</div>
+							<script type="text/javascript">
+							$( document ).ready(function() {
+ 
+ tiles = $(".exhibitionwrap, .openingSoonBlock").fadeTo(0, 0.5);
+
+$(window).scroll(function(d,h) {
+    tiles.each(function(i) {
+        a = $(this).offset().top + $(this).height();
+        b = $(window).scrollTop() + $(window).height() + 400;
+        if (a < b) $(this).fadeTo(500,1);
+    });
+});
+});
+
+							</script>
+						</body>
+						</html>
